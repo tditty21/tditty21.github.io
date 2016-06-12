@@ -1,20 +1,45 @@
 <!DOCTYPE html>
 
 <html lang="en-US">
-<body style="background-color:cyan;">
-
 <head>
 <style>
+#header {
+    background-color:red;
+    color:black;
+    text-align:center;
+    padding:5px;
+}
+#nav {
+   float:left;
+   text-align:left;
+   width:500px;
+}
+#section {
+    float:left;
+    text-align:center;
+}
+#section1 {
+    float:right;
+}
+#footer {
+    text-align:center;
+    clear:both;
+}
 p {color:red;}
 </style>
 </head>
 
+<body style="background-color:cyan;">
+<div style="min-width: 960px; margin: 0 auto;">
 <!-- TITLE -->
 
-<h1 style="text-align:left;">TDitty's Wall</h1>
+<div id="header">
+<h1>TDitty's Wall</h1>
+</div>
 
 <!-- FIRST PARAGRAPH AND HEADER -->
 
+<div id="nav">
 <h2 style="text-align:left;">My Games</h2>
 
 <p style="text-align:left;">
@@ -26,29 +51,44 @@ Rocket League<br><br>
 PC:<br>
 Starcraft II
 </p>
+</div>
 
 <!-- SECOND PARAGRAPH -->
 
-<h2 style="text-align:left;">My Books</h2>
+<div id="section">
+<h2>My Books</h2>
 
-<p style="text-align:left;">
+<p>
 Just Finished:  <u>The Big Short</u> by Michael Lewis<br><br>
 Currently Reading:  <u>The Innovators</u> by Walter Isaacson<br><br>
 Up Next:  <u>Rich Dad Poor Dad</u> by Robert Kiyosaki<br>
 </p>
+</div>
+
+<div id="section1">
+<h2 style="text-align:center;">Quotes</h2>
+
+<p>
+"Good judgement comes from experience, and a lot of that<br>
+comes from bad judgement."<br><br>
+"Early bird gets the worm."
+</p>
+</div>
 
 <!-- Testing out formatting using the format in the editor below -->
 
+<div id="footer">
 <p>
 <pre style="color:red;">
-  
-  
-  
-  
+
+
+
+
 Recently updated this page to reflect my daily personal life
 </pre>
 <p>
+</div>
 
-
+</div>
 </body>
 </html>

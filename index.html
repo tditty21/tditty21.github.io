@@ -6,52 +6,37 @@
 <style>
     
     /*TAG STYLING*/
+	
     p {color:red;}
     body {
         background-color:cyan;
         margin: 0px 0px 0px 0px;
+		min-width: 960px;
+		text-align:center;
     }
-    
+	
+	/*CLASS STYLING*/
+	
+    .column {
+		float: left;
+		width: 33.33%;
+		}
+	.row:after {
+		content: "";
+		display: table;
+		clear: both;	
+		}
+		
     /*ID STYLING*/
-    #pcontainer {
-        min-width: 960px; 
-        margin: 0px 15px;
-    }
+	
+    #pcontainer {margin: 0px 15px;}
     #header {
         background-color:red;
         color:black;
-        text-align:center;
         padding:5px;
         }
-    #games {
-        float:left;
-        text-align:left;
-        width:585px;
-        }
-    #books {
-        float:left;
-        text-align:center;
-        }
-    #quotes {
-        float:right;
-        }
-    #footer {
-        text-align:center;
-        clear:both;
-        }
-    #image1 {
-        float:left;
-        width:585px;
-        max-width:100%;
-        }
-    #image2 {
-        float:right;
-        max-width:100%;
-        }
-    #image3 {
-        float:none;
-        max-width:100%;
-        }
+    #footer {clear:both;}
+	#icontainer {margin: 0px 15px;}
 </style>
 </head>
 
@@ -63,27 +48,22 @@
     <h1>TDitty's Wall</h1>
 </div>
 
-<div id="pcontainer">
+<!-- BODY TEXT -->
 
-<!-- FIRST PARAGRAPH AND HEADER -->
+<div id="pcontainer" class="row">
 
-    <div id="games">
-        <h2>My Games</h2>
+    <div id="shoes" class="column">
+        <h2>Shoes</h2>
         <p>
-        <strong>Actively Playing:</strong><br><br>
-        Xbox One:<br>
-        NBA 2K17<br>
-        Civilization 6<br><br>
-        <strong>About to Play:</strong><br><br>
-        PC:<br>
-        Starcraft II
+        <strong>Most Recent Purchase:</strong><br><br>
+        Jordan 1 High Obsidian<br><br>
+        <strong>Favorite Purchase</strong><br><br>
+        Nike x Off-White Presto Monochromatic White<br><br>
         </p>
     </div>
 
-<!-- SECOND PARAGRAPH -->
-
-    <div id="books">
-        <h2>My Books</h2>
+    <div id="clothing" class="column">
+        <h2>Clothing</h2>
         <p>
         Just Finished:  <u>The Big Short</u> by Michael Lewis<br><br>
         Currently Reading:  <u>The Innovators</u> by Walter Isaacson<br><br>
@@ -91,8 +71,8 @@
         </p>
     </div>
 
-    <div id="quotes">
-        <h2 style="text-align:center;">Quotes</h2>
+    <div id="movies" class="column">
+        <h2>Movies</h2>
         <p>
         "Good judgement comes from experience, and a lot of that<br>
         comes from bad judgement."<br><br>
@@ -100,9 +80,23 @@
         </p>
     </div>
 
-<!-- Testing out formatting using the format in the editor below -->
+</div>
+<div id="icontainer" class="row">
 
-    <div id="footer">
+	<div id="image1" class="column image">
+		<img src="off_white_presto.jpg" alt="Picture Unavailable" width="400" height="300">
+	</div>
+
+	<div id="image2" class="column image">
+		<img src="162.JPG" alt="Picture Unavailable" width="300" height="300">
+	</div>
+
+	<div id="image3" class="column image">
+		<img src="Panama City Beach.jpg" alt="Picture Unavailable" width="400" height="300">
+	</div>
+
+<!-- Testing out formatting using the pre tag in the editor below -->
+<div id="footer">
         <p>
         <pre style="color:red;">
 
@@ -111,22 +105,9 @@
 
         Recently updated this page to reflect my daily personal life
         </pre>
-        <p>
+        </p>
     </div>
-
+	
 </div>
-
-<div id="image1">
-    <img src="Tiger Halloween.jpg" alt="Picture Unavailable" width="400" height="300">
-</div>
-
-<div id="image2">
-    <img src="Panama City Beach.jpg" alt="Picture Unavailable" width="400" height="300">
-</div>
-
-<div id="image3">
-    <img src="162.JPG" alt="Picture Unavailable" width="300" height="300">
-</div>
-
 </body>
 </html>
